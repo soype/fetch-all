@@ -6,7 +6,7 @@ const getData = () => {
 
   output.innerHTML = "";
 
-  await fetch("https://jsonplaceholder.typicode.com/posts/", {
+  fetch("https://jsonplaceholder.typicode.com/posts/", {
     method: "GET",
   })
     .then((res) => res.json())
